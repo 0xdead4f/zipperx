@@ -59,10 +59,10 @@ def help():
     s   : Include Symbols
     n   : include number
     
-    EXAMPLES : rarcker.py -g 12 lusn -f 
-             : rarcker.py -b -f /a.zip -w ~/wordlist.txt 
-             : rarcker.py -a new_word -w ~/wordlist.txt
-             : rarcker.py -d -f /a.7z 
+    EXAMPLES : zipperx.py -g 12 lusn -f 
+             : zipperx.py -b -f /a.zip -w ~/wordlist.txt 
+             : zipperx.py -a new_word -w ~/wordlist.txt
+             : zipperx.py -d -f /a.7z 
     
     Check the repository at (https://github.com/cap10jack/rarcker)
     """
