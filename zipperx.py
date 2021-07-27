@@ -22,7 +22,7 @@ rarcker_text = """
 
 ===================================
 
-       """
+"""
 
 def version():
     ver_text = """
@@ -72,7 +72,7 @@ def help():
 #work correctly
 def brute_zip(wordlist,filename):
   print(rarcker_text)
-  print("\033[0;32;40m [+]"," Cracking password , Grab your cofee ...")
+  print("\033[0;32;40m [+]"," Cracking password , Grab your coffee ...")
   n_words = len(list(open(wordlist, "rb")))
   file = zipfile.ZipFile(filename)
   with open(wordlist, "rb") as wordlist:
@@ -90,7 +90,7 @@ def brute_zip(wordlist,filename):
 def brute_7zip(wordlist,filename): 
   print(rarcker_text)
   n_words = len(list(open(wordlist, "rb")))
-  print("\033[0;32;40m [+]"," Cracking password , Grab your cofee ...")
+  print("\033[0;32;40m [+]"," Cracking password , Grab your coffee ...")
   with open(wordlist, "r") as wordlist:
     for word in tqdm(wordlist, total=n_words, unit="word"):
         try:
@@ -99,7 +99,7 @@ def brute_7zip(wordlist,filename):
         except:
           continue
         else:
-          print("\033[0;32;40m [+]","\n\033[0;32;40m [+]"," Password found:", word.strip(),'\n\033[0;32;40m [+]",')
+          print("\033[0;32;40m [+]","\n\033[0;32;40m [+]"," Password found:", word.strip(),'\n\033[0;32;40m [+]")
           exit(0)
           break
   print("\033[0;31;40m [!] Password not Found in current Wordlist")  
